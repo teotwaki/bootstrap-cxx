@@ -16,6 +16,12 @@ sudo yum install gcc-c++ libstdc++-devel \
                  glog-devel gflags-devel
 ```
 
+The following is a list of the tools used in this repository:
+
+- [autotools][autotools-manual], the main build system;
+- [Catch][catch-tutorial], the unit-test framework;
+- [glog][glog-usage], the Google logging framework.
+
 # Usage #
 
 Run the following command to initialise the build system:
@@ -34,3 +40,7 @@ unit tests, run `make -jN check`.
 Feel free to use this for whatever projects you'd like. There's not much to
 license in this repository, but for the sake of completeness, I'm putting this
 under the MIT License. See the LICENSE file for more details.
+
+[autotools-manual]: http://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html
+[catch-tutorial]: https://github.com/philsquared/Catch/blob/master/docs/tutorial.md#writing-tests
+[glog-usage]: https://google-glog.googlecode.com/svn/trunk/doc/glog.html

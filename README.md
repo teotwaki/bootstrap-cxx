@@ -35,6 +35,42 @@ To compile the code, simply run `make -jN`, where N is the number of cores you
 want to use (for example, on a quad-core system, use `make -j4`). To run the
 unit tests, run `make -jN check`.
 
+# Customisation #
+
+## Project name and version ##
+
+The main customisation is going to take place in `configure.ac`. The third and
+fourth lines would be where you'd put your projects details:
+
+- package name ("My Great App");
+- version ("1.6.8");
+
+The last three are completely optional:
+
+- bug-reporting email address;
+- tarname (base name for the archive file);
+- project URL.
+
+Note: Instead of hard-coding your project name in the source, use the define'd
+values in config.hpp:
+
+```cpp
+#include "config.hpp"
+
+cout << "My project is: " << PACKAGE_NAME << endl;
+```
+
+`PACKAGE_NAME` comes directly from the first argument (package name) passed to
+`AC_INIT`.
+
+## Binaries ##
+
+The second area of customisation is the name of the binaries/libraries you'll
+be compiling. Look at `Makefile.am`, and notice the 6th line: this is where you
+define the name of your binary. You tell Automake which source files to compile
+by changing the lines around `bootstrap_cxx_SOURCES`. Check the [autotools
+manual][autotools-manual] for more details.
+
 # License #
 
 Feel free to use this for whatever projects you'd like. There's not much to

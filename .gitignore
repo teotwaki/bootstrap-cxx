@@ -5,9 +5,8 @@ aclocal.m4
 autom4te.cache/
 compile
 config.guess
-config.h.in
-config.hpp
-config.hpp.in
+config.hh.in
+config.hh
 config.status
 config.sub
 configure

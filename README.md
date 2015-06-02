@@ -52,10 +52,10 @@ The last three are completely optional:
 - project URL.
 
 Note: Instead of hard-coding your project name in the source, use the define'd
-values in config.hpp:
+values in config.hh:
 
 ```cpp
-#include "config.hpp"
+#include "config.hh"
 
 cout << "My project is: " << PACKAGE_NAME << endl;
 ```

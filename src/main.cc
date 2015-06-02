@@ -1,4 +1,4 @@
-#include "main.hpp"
+#include "main.hh"
 
 int main() {
   init_logging();

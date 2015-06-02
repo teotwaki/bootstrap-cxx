@@ -3,7 +3,7 @@
 
 #include <glog/logging.h>
 
-#include "config.hpp"
+#include "config.hh"
 
 void init_logging();
 

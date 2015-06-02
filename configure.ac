@@ -8,7 +8,7 @@ AC_PROG_CXX
 AC_PROG_LIBTOOL
 
 AC_CONFIG_FILES(Makefile)
-AC_CONFIG_HEADER([config.hpp])
+AC_CONFIG_HEADER([config.hh])
 AC_CONFIG_MACRO_DIR([m4])
 
 PKG_CHECK_MODULES([logging], [libglog >= 0.3.3])

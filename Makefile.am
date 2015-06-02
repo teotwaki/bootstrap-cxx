@@ -7,13 +7,13 @@ bin_PROGRAMS = bootstrap-cxx
 check_PROGRAMS = unittests
 TESTS = $(check_PROGRAMS)
 
-common_sources = src/log.hpp
+common_sources = src/log.hh
 
-bootstrap_cxx_SOURCES = src/main.hpp src/main.cpp \
-						src/foo.hpp src/foo.cpp \
-						$(common_sources) src/log.cpp
+bootstrap_cxx_SOURCES = src/main.hh src/main.cc \
+						src/foo.hh src/foo.cc \
+						$(common_sources) src/log.cc
 
-unittests_SOURCES = src/test_runner.hpp src/test_runner.cpp \
-					tests/foo_test.cpp src/foo.hpp src/foo.cpp
+unittests_SOURCES = src/test_runner.hh src/test_runner.cc \
+					tests/foo_test.cc src/foo.hh src/foo.cc
 
 dist_noinst_SCRIPTS = autogen.sh

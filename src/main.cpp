@@ -1,11 +1,11 @@
 #include "main.hpp"
 
 int main() {
-	init_logging();
+  init_logging();
 
-	DLOG(INFO) << PACKAGE_NAME << " starting up";
-	do_something();
+  DLOG(INFO) << PACKAGE_NAME << " starting up";
+  do_something();
 
-	DLOG(INFO) << "Everything done. Shutting down.";
-	return 0;
+  DLOG(INFO) << "Everything done. Shutting down.";
+  return 0;
 }

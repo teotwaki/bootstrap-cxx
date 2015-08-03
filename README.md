@@ -7,10 +7,10 @@ get going.
 
 # Dependencies #
 
-On Fedora 21, the following should get you going:
+On Fedora 22, the following should get you going:
 
 ```bash
-sudo yum install gcc-c++ libstdc++-devel \
+sudo dnf install gcc-c++ libstdc++-devel \
                  automake autoconf libtool sysconftool \
                  pkgconfig \
                  glog-devel gflags-devel
